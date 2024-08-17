@@ -1,0 +1,2 @@
+No.,Observed Passband,Photometry Measurement,Uncertainty,Units,Frequency,Flux Density,Upper limit of uncertainty,Lower limit of uncertainty,Upper limit of Flux Density,Lower limit of Flux Density,NED Uncertainty,NED Units,Refcode,Significance,Published frequency,Frequency Mode,Coordinates Targeted,Spatial Mode,Qualifiers,Comments
+1,1.4GHz,14.5,+/-1.4,milliJy,1.4E9,0.0145,0.0014,0.0014,,,+/-1.40E-03,Jy,1998AJ....115.1693C,uncertainty,1.40   GHz,Broad-band measurement,22 48 45.33 -16 01 48.9 (J2000),Flux integrated from map,,From new raw data
