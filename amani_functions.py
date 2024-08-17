@@ -1,5 +1,5 @@
 #these are extra functions that asssit with analysis but dont need to be seen in main.py.
-# However, they are bing referenced in the main.py
+# However, they are bing referenced in the main.py.
 
 #Suppressing specific Astropy warnings
 def get_sources(skycoord, search_radius, limit_num=5, new_sources=True):
