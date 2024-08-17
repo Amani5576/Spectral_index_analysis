@@ -1,9 +1,9 @@
-Test code with fits file : "Abell 2385" from : https://archive-gw-1.kat.ac.za/public/repository/10.48479/7epd-w356/data/enhanced_products/bucket_contents.html
+Test code with fits file: "Abell 2385" from: https://archive-gw-1.kat.ac.za/public/repository/10.48479/7epd-w356/data/enhanced_products/bucket_contents.html
 
 ## When you download Abell 2385 Use the following on Jupyter Notebook or IDE such as Spyder:
-### 1. Run "layer_remover.py" to remove some unnecessry layers that give outliers)
+### 1. Run "layer_remover.py" to remove some unnecessary layers that give outliers)
 ### 2. Run "separation_of_cube.py" to split into slices.
-### 3. "amani_Functions.py" is to be directly imported and used in the main.py for further use and shouldnt be run as a lone script.
+### 3. "amani_Functions.py" is to be directly imported and used in the main.py for further use and shouldn't be run as a lone script.
 
 ### 4. Significant changes made with radioflux.py from https://github.com/mhardcastle/radioflux/radioflux/radioflux.py
 
@@ -24,7 +24,7 @@ Will output all results into "results_with_sigma.txt" file which is automaticall
 #### Added `save_to_file` parameter to `printflux` function signature
         def printflux(filename, rm, region, noise, bgsub, background=0, label='', verbose=False, save_to_file=None):
 
-#### Included `output_lines` list and file saving code
+#### Included `output_lines` list and file-saving code
         print('RMS values used:', fg.rms)
         output_lines.append(f'RMS values used: {fg.rms}\n')
         header = "Filename\tLabel\tFrequency(Hz)\tFlux(Jy)\tError(Jy)\tSigma_3(Jy)\tSigma_5(Jy)\n"
@@ -50,8 +50,6 @@ Will output all results into "results_with_sigma.txt" file which is automaticall
 
 #### Added file saving to `flux_for_files` function call
         flux_for_files(args.files, args.fgr, args.bgr, args.indiv, args.bgsub, verbose=args.verbose, save_to_file=args.output)
-
-## 5.Check "requirements.txt" file in case of any compatibility issues
 
 # main.py functionality
 
@@ -84,3 +82,5 @@ Output: A collection of identified objects stored in a list or array.
 Plots the spectral index using the provided frequency and error data.\
 Input: Fr (array) - Frequencies, Fl (array) - Flux values, Err (array) - Error values, and other optional parameters for customizing the plot. \
 Output: Displays a plot of the spectral index, with various customization options.
+
+NOTE: Check "requirements.txt" file in case of any compatibility issues
