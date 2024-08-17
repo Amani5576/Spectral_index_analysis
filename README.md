@@ -53,4 +53,34 @@ Will output all results into "results_with_sigma.txt" file which is automaticall
 
 ## 5.Check "requirements.txt" file in case of any compatibility issues
 
+# main.py functionality
 
+### get_csv_dat()
+Reads a CSV file and returns its contents as a numpy array.\
+Input: filename (string) - The name of the CSV file to be read.\
+Output: Returns the data in the CSV file as a numpy array.
+
+### see_layer()
+Visualizes data by plotting specific objects from a given layer.\
+Input: layer (int) - The data layer to visualize, objs_collected (array) - The collected objects to be plotted, chosen (tuple) - Indices of objects to plot. \
+Output: Displays a plot of the selected objects.
+
+### zoom_chosen()
+Zooms in on selected objects within the collected data for closer inspection. \
+Input: objs_collected (array) - The collected objects to zoom in on, chosen (tuple) - Indices of objects to zoom into. \
+Output: Displays zoomed-in visualizations of the chosen objects.
+
+### get_freq_errors()
+Reads a file and extracts frequency errors from it.\
+Input: filename (string) - The name of the file containing frequency data.\
+Output: Returns a list or array of frequency errors extracted from the file.
+
+### searching_objects()
+Identifies and collects objects of interest from a directory of images.\
+Input: None, the function works on predefined directories and criteria.\
+Output: A collection of identified objects stored in a list or array.
+
+### plot_SpectralIndex()
+Plots the spectral index using the provided frequency and error data.\
+Input: Fr (array) - Frequencies, Fl (array) - Flux values, Err (array) - Error values, and other optional parameters for customizing the plot. \
+Output: Displays a plot of the spectral index, with various customization options.
