@@ -1,24 +1,6 @@
 #these are extra functions that asssit with analysis but dont need to be seen in main.py.
 # However, they are bing referenced in the main.py
 
-from matplotlib import pyplot as plt
-import numpy as np
-from matplotlib.colors import Normalize
-import matplotlib.ticker as ticker
-from astropy.io import fits
-import astropy.units as u
-import astropy.constants as c
-from astropy.coordinates import SkyCoord
-from astropy.wcs import WCS
-from matplotlib.patches import Circle
-#Suppressing specific Astropy warnings
-import warnings
-from astropy.utils.exceptions import AstropyWarning
-from astroquery.simbad import Simbad
-import pandas as pd
-import pickle
-from astropy.cosmology import Planck18 as cosmo #To calculate comobing distance
-
 #Suppressing specific Astropy warnings
 def get_sources(skycoord, search_radius, limit_num=5, new_sources=True):
     
